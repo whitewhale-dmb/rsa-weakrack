@@ -21,9 +21,8 @@ print("\n\n\n")
                                                      
 # Retrieve args
 parser = argparse.ArgumentParser(
-                    prog = 'rsa_weakrack',
-                    description = 'Runs the crypto modulus against factorDB to try and find known factors, then regenerates the private key file if known.',
-                    epilog = 'Text at the bottom of help')
+                    prog = 'rsa-weakrack.py',
+                    description = 'Runs the PK modulus through factorDB to try and find known factors, then regenerates the private key if successful')
 parser.add_argument('-p', '--pubkey', required=True)
 args = parser.parse_args()
 
